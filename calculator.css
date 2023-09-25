@@ -1,0 +1,95 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+body{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.buttons{
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 2rem;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px grey;
+}
+.buttons:hover{
+    background-color: skyblue;
+    cursor: pointer;
+}
+.buttons:active{
+    background-color: blue;
+}
+#equal{
+    
+    background-color: blue;
+}
+#equal:hover{
+    background-color: skyblue;
+}
+#equal:active{
+    background-color: white;
+    color: black;
+}
+#numbers{
+    width: 190px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-rows: 60px 60px 60px 60px 60px 70px;
+    grid-template-columns: 60px 60px 60px 60px;
+    margin-left: 10px;
+    
+    
+}
+#display{
+    background-color: aliceblue;
+    width: 230px;
+   height:100px;
+   color: blueviolet;
+   font-size: 3rem;
+   text-align: right;
+   padding:10px;
+   border-radius: 10px;
+   overflow:auto;
+}
+
+#content{
+    width:260px;
+    border: solid 2px white;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px white;
+}
+    
+    #complement{
+        color:black;
+        position: absolute;
+        top:0px;
+        right:50px;
+        background-color: yellow;
+        font-size: 2rem;
+        font-family: cursive;
+        border: double 5px pink;
+        border-radius: 45%;
+        visibility: hidden;
+        animation-name: show;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes show {
+        from{
+            top:0px
+        }
+        to{
+            top:50px
+        }
+    }
